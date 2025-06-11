@@ -64,7 +64,3 @@ kl := keylock.New()
 // Custom spin limit
 kl := keylock.New().WithMaxSpins(32)
 ```
-
-## Performance
-
-KeyLock uses spinlocks with exponential backoff for optimal performance in high-concurrency scenarios while minimizing CPU usage during contention.
